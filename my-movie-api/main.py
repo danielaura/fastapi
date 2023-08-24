@@ -33,6 +33,7 @@ def message():
 def get_movies():
     return movies
 
+#Parametro de ruta Ej. {id}
 @app.get('/movies/{id}', tags=['movies'])
 def get_movie(id: int):
     for item in movies:
